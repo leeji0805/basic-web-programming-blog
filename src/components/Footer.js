@@ -1,20 +1,15 @@
 import React, { useState } from "react";
-import styles from '../../styles/Home.module.css'
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WebIcon from '@material-ui/icons/Web';
-import Link from '@material-ui/core/Link';
 import SvgIcon from '@material-ui/core/SvgIcon';
-// import { Kakaotalk } from '../../public/kakaotalk'
 import EmailIcon from '@material-ui/icons/Email';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Fireworks from './Fireworks'
-import InstagramIcon from '@material-ui/icons/Instagram';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Typist from 'react-typist';
+import HomeIcon from "@material-ui/icons/Home";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -73,7 +68,7 @@ export default function Home(props) {
       <Box onMouseLeave={() => setLinkValue("")} textAlign="center" maxWidth={600} >
         <BottomNavigation value={linkValue}>
           <BottomNavigationAction target="_blank" href="https://github.com/Kongji82" onMouseEnter={handleLinkChange} label="Github" value="Github" icon={<GitHubIcon fontSize="large" />} />
-          <BottomNavigationAction target="_blank" href="https://kongji82.github.io/" onMouseEnter={handleLinkChange} label="Blog" value="Blog" icon={<WebIcon fontSize="large" />} />
+          <BottomNavigationAction target="_blank" href="https://kongji82.github.io/" onMouseEnter={handleLinkChange} label="Blog" value="Blog" icon={<HomeIcon fontSize="large" />} />
         </BottomNavigation>
       </Box>
       <Typography variant="h5"> {"<Contact />"} </Typography>

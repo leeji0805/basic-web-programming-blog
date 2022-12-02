@@ -24,56 +24,36 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "꽃길",
-    subtitle: `온라인으로 부조금을 송금 및 관리할 수 있는 웹 어플리케이션 \n(NH 농협 핀테크 공모전 참가)`,
-    description: `프로젝트를 기획하고 웹 UI 디자인과 퍼블리싱을 진행하였습니다.\n
-    모바일 어플리케이션으로 실행시키기 위하여 웹 어플리케이션 형태로 제작하였습니다`,
-    mypart: [` vuex와 JWT 토큰으로 로그인 상태 관리 구현`,
-      ` eslint, prettier 통한 코딩컨벤션의 지속적인 통합`,
-      ` webpack, babel을 활용하여 es6도입 및 scss파일 번들링, 배포`,],
-    github: `jeky22/NHfintech-frontend`,
-    stacks: ['vue', 'node', 'mysql', 'aws', 'bootstrap'],
-    img: "ggotgil.png"
-  },
-  {
-    name: "Let Eat, Go",
-    subtitle: `음식점구독서비스를 일반 자영업자들과 소비자들에게 \n제공하기 위한 플랫폼`,
-    description: `웹 프론트 개발과 백엔드 서버 개발을 맡아 진행하였습니다 프로젝트에서 개발환경세팅과 메인 기능구현 서버구축을 하였습니다`,
-    mypart: [
-      `webpack, babel 을 활용한 모듈 번들링 및 배포`,
-      `travisCI 를 통해 빌드 테스트 코딩컨벤션 통일`,
-      `스크럼 회의 백로그 작성등을 통한 agile 방식의 개발 적용`,
-      `AWS RDS, EC2, S3 활용한 클라우드 배포`,
+    name: "줍깅",
+    subtitle: `플로깅을 도와주는 애플리케이션 제작.\n (K-해커톤 참가)`,
+    description: `프로젝트에서 서버파트 PL(Project Leader)를 맡아,\n 서버부분 총괄하는 역할을 맡았습니다.`,
+    mypart: [` springboot, JWT를 이용한 로그인 구현`,
+      ` 이메일 인증 서비스 구현`,
+      ` Jpa를 이용하여 DB사용`,
+      ` AWS EC2, RDS를 이용하여 배포`,
     ],
-    github: `jeky22/returnICE-frontend`,
-    stacks: ['vue', 'node', 'mysql', 'aws', 'bootstrap'],
-    img: "leteatgo.png"
+    github: `To-be-young/Jubging_back`,
+    stacks: ['springboot', 'mysql', 'aws'],
+    img: "jubgging.png",
+    link: {
+      github: "https://github.com/To-be-young/Jubging_back",
+      news: "https://jnuhongbo.jejunu.ac.kr/boards/hongbo_jnunews/16686619975957?page=3",
+    },
   },
-  {
-    name: "Circus",
-    subtitle: `온라인으로 교내외 스터디를 만들고 \n참여할 수 있도록 돕는 웹 서비스 플랫폼`,
-    description: `프론트엔드를 맡아 프로젝트를 진행하였습니다`,
-    mypart: [
-      `restful 한 API 설계`,
-      `session 쿠키 관리를 통한 클라이언트 인증 방식 도입`,
-      `Bootsrap 사용하여 반응형 웹으로 제작`,
-    ],
-    github: `jeky22/webproject`,
-    stacks: ['vue', 'node', 'mongodb', 'bootstrap'],
-    img: "circus.gif"
-  },
-  {
-    name: "한터리즘",
-    subtitle: `아주대학교 학술소학회 한터의 소개 및\n학술부원 신청을 위한 웹페이지`,
-    description: `웹 퍼블리싱을 맡아 진행하였습니다 모바일과 pc 모두 보기 편하도록 반응형 웹으로 제작하였습니다`,
-    mypart: [
-      ` Bootsrap 사용하여 반응형 웹으로 제작`,
-      ` 인터렉티브한 웹 개발`,
-    ],
-    github: `jeky22/hantorism`,
-    stacks: ['django', 'mysql', 'aws', 'bootstrap'],
-    img: "hantorism.gif"
 
+  {
+    name: "Coanda효과를 사용한 무인 스텔스 군용 드론 연구",
+    subtitle: `Coanda효과를 사용한 무인 스텔스 군용 드론 연구 및 논문 공동저자 등재\n IITP-Purdue Summer Program을 통해 진행`,
+    description: `데이터 수집 및 자료조사 역할을 맡았습니다.`,
+    mypart: [` 사례조사 및 레퍼런스 조사`,
+      ` 실험 데이터 수집`,
+    `https://arxiv.org/abs/2005.14629`],
+    github: ``,
+    stacks: ['3D-printer', 'raspberry pi'],
+    img: "purdue.png",
+    link: {
+      homepage: "https://arxiv.org/abs/2005.14629",
+    }
   },
 ]
 

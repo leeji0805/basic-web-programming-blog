@@ -7,10 +7,9 @@ import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 
 import SvgIcon from '@material-ui/core/SvgIcon';
-import AlarmIcon from '@material-ui/icons/Alarm';
-import IconButton from '@material-ui/core/IconButton';
+import HomeIcon from '@material-ui/icons/Home';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import YouTubeIcon from '@material-ui/icons/YouTube';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
@@ -107,8 +106,7 @@ export default function RecipeReviewCard(props) {
             </Box>
             <Box justifyContent="space-between" display="flex" className={classes.backbadge}>
               <Typography variant="body">개발 직무 : </Typography>
-              <Box><img className={classes.badgestyle} src={`https://img.shields.io/badge/-Frontend-brightgreen`} />
-                <img className={classes.badgestyle} src={`https://img.shields.io/badge/-Design-brightgreen`} />
+              <Box>
                 <img className={classes.badgestyle} src={`https://img.shields.io/badge/-Backend-brightgreen`} /></Box>
             </Box>
             <Box className={classes.backtypography}>
@@ -137,10 +135,9 @@ export default function RecipeReviewCard(props) {
       <div>
         <Box onMouseLeave={() => setValue("")} textAlign="center" className={classes.boxstyle} borderRadius={16} boxShadow={4}>
           <BottomNavigation value={value}>
-            <BottomNavigationAction onMouseEnter={handleChange} label="Recents" value="Recents" icon={<AlarmIcon />} />
-            <BottomNavigationAction onMouseEnter={handleChange} label="Video" value="Video" icon={<YouTubeIcon />} />
-            <BottomNavigationAction onMouseEnter={handleChange} label="Notion" value="Notion" icon={NotionIcon} />
-            <BottomNavigationAction onMouseEnter={handleChange} label="Github" value="Github" icon={<GitHubIcon />} />
+            {props.link.github && <BottomNavigationAction target="_blank" href={props.link.github} onMouseEnter={handleChange} label="Github" value="Github" icon={<GitHubIcon />} />}
+            {props.link.homepage && <BottomNavigationAction target="_blank" href={props.link.homepage} onMouseEnter={handleChange} label="Homepage" value="Homepage" icon={<HomeIcon />} />}
+            {props.link.news && <BottomNavigationAction target="_blank" href={props.link.news} onMouseEnter={handleChange} label="News" value="News" icon={<MenuBookIcon />} />}
           </BottomNavigation>
         </Box>
       </div>

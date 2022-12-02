@@ -6,10 +6,11 @@ import ComputerIcon from '@material-ui/icons/Computer';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
 export const Timelinedata = [
-  { date: "2014.03", icon: <SchoolIcon />, title: " 아주대학교 입학", detail: "사이버 보안학과 14학번" },
-  { date: "2015.06 ~ 2017.06", icon: <BuildIcon />, title: "군 입대", detail: "공군병장 만기전역" },
-  { date: "2019.07 ~ 2019.08", icon: <MenuBookIcon />, title: "청년 IT 인재육성(웹개발자) 수료", detail: `SK C&C, 경기도·경기경제과학진흥원 주최` },
-  { date: "2020.01 ~ 2020.05", icon: <WorkIcon />, title: " ㈜팩타고라", detail: " IT기업 모바일 개발팀 인턴" },
-  { date: "2020.09 ~ 2020.09", icon: <ComputerIcon />, title: "우아한 테크러닝 3기", detail: "React&TypeScript by.우아한테크코스" },
-  { date: "2020.08  ", icon: <EventAvailableIcon />, title: "아주대학교 졸업", detail: "" },
+  { date: "2018.03", icon: <SchoolIcon />, title: " 제주대학교 입학", detail: "컴퓨터공학전공 18학번" },
+  { date: "2019.01 ~ 2019.02", icon: <MenuBookIcon />, title: "제주대학교 sw특공대", detail: "필리핀 바기오 어학연수" },
+  { date: "2019.06 ~ 2019.08", icon: <MenuBookIcon />, title: " IITP-Purdue Summer Program Certificate of Merit", detail: `Purdue 무인 군용 드론 프로젝트 진행` },
+  { date: "2019.08 ~ 2021.03", icon: <WorkIcon />, title: "군 입대", detail: "육군병장 만기전역" },
+  { date: "2021.08 ~ ", icon: <SchoolIcon />, title: "제주대학교 학부연구생", detail: "제주대학교 시스템소프트웨어 연구실" },
+  { date: "2022.08", icon: <SchoolIcon />, title: "카카오트랙 장학생", detail: "2022년 1학기 카카오트랙 장학생" },
+  { date: "2022.11", icon: <ComputerIcon />, title: "K-해커톤 대상", detail: "정보통신 산업진흥원 주관 제 10회 K-해커톤 대상(과학기술정보통신부 장관상), 2022" },
 ]

@@ -55,7 +55,7 @@ export default function Home() {
       <Box flex={1} className={classes.main} maxWidth={600} >
         {/* <Fireworks /> */}
         <Typography variant="body1">
-          <div className={classes.typoFont}>"어떻게 하면 사용자가 더 쓰기편한 서비스를 만들 수 있을까?"</div>
+          <div className={classes.typoFont}>""</div>
           <div className={classes.typo}>안녕하세요! 프론트엔드 개발자 이제찬입니다.</div>
           <div className={classes.typo}>대학생활에 다양한 프로젝트와 인턴십과정에서 다양한 프로젝트를 진행하였고, 이를 통해 웹 개발 업무 프로세스에 전반적인 이해력을 습득하였습니다.</div>
           <div className={classes.typo}>개발하면서 제가 느낀 좋은 IT 서비스는 사용자의 입장에서 쓰기편한 서비스라 생각하고, 늘 사용자의 관점을 고안하며 개발하고 있습니다. </div>
@@ -66,16 +66,15 @@ export default function Home() {
 
       <Box onMouseLeave={() => setLinkValue("")} textAlign="center" maxWidth={600} >
         <BottomNavigation value={linkValue}>
-          <BottomNavigationAction target="_blank" href="https://github.com/jeky22" onMouseEnter={handleLinkChange} label="Github" value="Github" icon={<GitHubIcon fontSize="large" />} />
-          <BottomNavigationAction target="_blank" href="https://velog.io/@jeky22" onMouseEnter={handleLinkChange} label="Blog" value="Blog" icon={<WebIcon fontSize="large" />} />
-          <BottomNavigationAction target="_blank" href="https://www.instagram.com/jeky.__.26/" onMouseEnter={handleLinkChange} label="Instagram" value="Instagram" icon={<InstagramIcon fontSize="large" />} />
+          <BottomNavigationAction target="_blank" href="https://github.com/Kongji82" onMouseEnter={handleLinkChange} label="Github" value="Github" icon={<GitHubIcon fontSize="large" />} />
+          <BottomNavigationAction target="_blank" href="https://kongji82.github.io/" onMouseEnter={handleLinkChange} label="Blog" value="Blog" icon={<WebIcon fontSize="large" />} />
         </BottomNavigation>
       </Box>
       <Typography variant="h5"> {"<Contact />"} </Typography>
       <Box onMouseLeave={() => setContactValue("")} textAlign="center" maxWidth={600} >
         <BottomNavigation value={contactValue}>
-          <BottomNavigationAction target="_blank" href="https://open.kakao.com/o/sdBmKM8c" onMouseEnter={handleContactChange} label="Kakaotalk" value="Kakaotalk" icon={KakaoIcon} />
-          <BottomNavigationAction href="mailto:qhzh33@gmail.com" target="_blank" onMouseEnter={handleContactChange} label="Email" value="Email" icon={<EmailIcon fontSize="large" />} />
+          {/*<BottomNavigationAction target="_blank" href="https://open.kakao.com/o/sdBmKM8c" onMouseEnter={handleContactChange} label="Kakaotalk" value="Kakaotalk" icon={KakaoIcon} />*/}
+          <BottomNavigationAction href="mailto:kongji4092@gmail.com" target="_blank" onMouseEnter={handleContactChange} label="Email" value="Email" icon={<EmailIcon fontSize="large" />} />
         </BottomNavigation>
       </Box>
     </div>

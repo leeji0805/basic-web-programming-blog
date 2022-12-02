@@ -93,12 +93,12 @@ export default function Home(props) {
             <Typist className={styles.title} avgTypingDelay={50}>
               <span> 안녕하세요. </span>
               <Typist.Backspace count={8} delay={600} />
-              <span> 사용자 친화적인 </span>
+              <span> 언제나 노력하고 </span>
               <Typist.Backspace count={10} delay={600} />
-              <span> 최신트렌드를 중요시하는 </span>
+              <span> 성장을 즐기는 </span>
               <Typist.Backspace count={14} delay={600} />
-              <span> 프론트엔드 개발자 </span> <br />
-              <span> 이제찬 입니다.</span>
+              <span> 백엔드 개발자 </span> <br />
+              <span> 공지혁 입니다.</span>
             </Typist>
           </Typography>}
         </Grid >

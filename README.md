@@ -5,6 +5,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+source ~/.bash_profile
+nvm install 16
+nvm use 16
+
 npm run dev
 # or
 yarn dev

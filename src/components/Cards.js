@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
 
   subtitle: {
     fontWeight: 600,
-    padding: theme.spacing(2),
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+    paddingTop: theme.spacing(1),
     whiteSpace: "pre-wrap",
   },
   cover: {
@@ -38,16 +40,19 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   backtable: {
-    paddingTop: theme.spacing(1),
+    paddingTop: theme.spacing(2),
+    whiteSpace: "pre-wrap",
+    lineHeight: "10px",
   },
   badgestyle: {
     paddingLeft: theme.spacing(1),
   },
   backbadge: {
-    paddingRight: theme.spacing(9),
     paddingLeft: theme.spacing(1),
-    paddingTop: theme.spacing(1),
-    margin: "auto"
+    paddingRight: theme.spacing(1),
+    '& > *': {
+      margin: "auto 0"
+    },
   },
   backstack: {
     position: "fixed",
@@ -58,10 +63,13 @@ const useStyles = makeStyles((theme) => ({
     right: 0
   },
   backtypography: {
-    marginTop: theme.spacing(3)
+    paddingTop: theme.spacing(1),
+  },
+  backmycontribute: {
+    paddingTop: theme.spacing(1),
   },
   backchip: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(1),
     marginRight: theme.spacing(1)
   },
   boxstyle: {
@@ -70,6 +78,18 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     marginBottom: "16px",
     backgroundColor: "white",
+  },
+  taskchip: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > p': {
+      whiteSpace: "nowrap",
+      margin: 0
+    },
+    '& > div': {
+      margin: theme.spacing(0.5)
+    },
   },
 
 }))
@@ -105,7 +125,7 @@ export default function RecipeReviewCard(props) {
               <img src={`https://img.shields.io/github/last-commit/${props.github}?style=plastic`} />
             </Box>
             <Box justifyContent="space-between" display="flex" className={classes.backbadge}>
-              <Typography variant="body">개발 직무 : </Typography>
+              <Typography variant="">개발 직무 : </Typography>
               <Box>
                 <img className={classes.badgestyle} src={`https://img.shields.io/badge/-Backend-brightgreen`} /></Box>
             </Box>

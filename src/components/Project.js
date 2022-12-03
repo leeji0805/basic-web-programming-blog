@@ -39,6 +39,7 @@ const projects = [
       github: "https://github.com/To-be-young/Jubging_back",
       news: "https://jnuhongbo.jejunu.ac.kr/boards/hongbo_jnunews/16686619975957?page=3",
     },
+    task: ["front", "design"],
   },
 
   {
@@ -46,13 +47,26 @@ const projects = [
     subtitle: `Coanda효과를 사용한 무인 스텔스 군용 드론 연구 및 논문 공동저자 등재\n IITP-Purdue Summer Program을 통해 진행`,
     description: `데이터 수집 및 자료조사 역할을 맡았습니다.`,
     mypart: [` 사례조사 및 레퍼런스 조사`,
-      ` 실험 데이터 수집`,
-    `https://arxiv.org/abs/2005.14629`],
+      ` 실험 데이터 수집`,],
     github: ``,
     stacks: ['3D-printer', 'raspberry pi'],
     img: "purdue.png",
     link: {
       homepage: "https://arxiv.org/abs/2005.14629",
+    }
+  },
+
+  {
+    name: "제주 QFI 어떵하지",
+    subtitle: `QR코드를 이용한 제주 카페 와이파이 자동 로그인 프로젝트, 데이터를 이용하여 카페 추천 웹 개발`,
+    description: `2021년 Project-Lab 수업을 통해 와이파이 로그인이 가능한 QR코드 프로그램을 제주 카페에 홍보, 그리고 모인 접속 기록을 통해 검색 카페와 비슷한 카페, 비슷하지 않는 카페를 추천해주는 웹 페이지를 개발했습니다.`,
+    mypart: [` chart.js를 이용해 데이터 시각화`,
+      ` Django를 이용하여 네이버 OpenAPI연동`,],
+    github: `https://github.com/PLAB-ROOF-TOP/Eotteohaji`,
+    stacks: [`django`, `javascript`],
+    img: "QFI.jpg",
+    link: {
+      github: "https://github.com/PLAB-ROOF-TOP/Eotteohaji",
     }
   },
 ]
@@ -108,7 +122,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  initialSlide: 1,
+  initialSlide: 0,
   swipeToSlide: true,
   centerPadding: "0",
   responsive: [

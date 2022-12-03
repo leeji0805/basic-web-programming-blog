@@ -34,7 +34,8 @@ const projects = [
     ],
     github: `To-be-young/Jubging_back`,
     stacks: ['springboot', 'mysql', 'aws'],
-    img: "jubgging.png",
+    // img: "jubgging.png",
+    img: "https://github.com/Kongji82/basic-web-programming-blog/blob/release/public/jubgging.png?raw=true",
     link: {
       github: "https://github.com/To-be-young/Jubging_back",
       news: "https://jnuhongbo.jejunu.ac.kr/boards/hongbo_jnunews/16686619975957?page=3",
@@ -50,7 +51,8 @@ const projects = [
       ` 실험 데이터 수집`,],
     github: ``,
     stacks: ['3D-printer', 'raspberry pi'],
-    img: "purdue.png",
+    // img: "purdue.png",
+    img: "https://github.com/Kongji82/basic-web-programming-blog/blob/release/public/purdue.png?raw=true",
     link: {
       homepage: "https://arxiv.org/abs/2005.14629",
     }
@@ -64,7 +66,8 @@ const projects = [
       ` Django를 이용하여 네이버 OpenAPI연동`,],
     github: `https://github.com/PLAB-ROOF-TOP/Eotteohaji`,
     stacks: [`django`, `javascript`],
-    img: "QFI.jpg",
+    // img: "QFI.jpg",
+    img: "https://github.com/Kongji82/basic-web-programming-blog/blob/release/public/QFI.jpg?raw=true",
     link: {
       github: "https://github.com/PLAB-ROOF-TOP/Eotteohaji",
     }
